@@ -13,18 +13,18 @@ public class TestaCursoComAluno {
 		Aluno a1 = new Aluno("Rodrigo Turini", 34672);
 		Aluno a2 = new Aluno("Guilherme Silveira", 5617);
 		Aluno a3 = new Aluno("Mauricio Aniche", 17654);
-		
+
 		javaColecoes.matricula(a1);
 		javaColecoes.matricula(a2);
 		javaColecoes.matricula(a3);
-		
+
 		System.out.println("Todos os Alunos matriculados: ");
-		javaColecoes.getAlunos().forEach( alunos -> {
+		javaColecoes.getAlunos().forEach(alunos -> {
 			System.out.println(alunos);
 		});
-		
-		
 
+		System.out.println("O Aluno está matriculado? " + javaColecoes.estaMatriculado(a1));
+		
 	}
 
 }
