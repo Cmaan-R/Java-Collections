@@ -30,6 +30,10 @@ public class TestaCursoComAluno {
 
 		System.out.println("O a1 é equals ao Turini? ");
 		System.out.println(a1.equals(turini));
+		
+		// Obrigatoriamente o seguinte é True:
+		
+		System.out.println(a1.hashCode() == turini.hashCode());
 
 	}
 
