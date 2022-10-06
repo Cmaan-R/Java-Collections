@@ -12,11 +12,14 @@ public class TestaBuscaAlunosNoCurso {
 		Aluno a1 = new Aluno("Rodrigo Turini", 34672);
 		Aluno a2 = new Aluno("Guilherme Silveira", 5617);
 		Aluno a3 = new Aluno("Mauricio Aniche", 17654);
+		Aluno a4 = new Aluno("Paulo Silveira", 17654);
 
 		javaColecoes.matricula(a1);
 		javaColecoes.matricula(a2);
 		javaColecoes.matricula(a3);
+		javaColecoes.matricula(a4);
 
+		System.out.println(javaColecoes.getAlunos());
 		System.out.println("Quem é o aluno com a Matricula: 5617");
 		Aluno aluno = javaColecoes.buscarMatriculado(5617);
 		System.out.println("Aluno: " + aluno);
